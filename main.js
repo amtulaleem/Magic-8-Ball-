@@ -1,16 +1,8 @@
-//Program Title
-// COIN FLIP SIMULATOR
-//HTML Variables
-document.getElementById("btn");
-addEventListener("click", btnClicked);
-let question = document.getElementById("question");
-
 document.getElementById("btn").addEventListener("click", btnClicked);
-
+let question = document.getElementById("question");
 function btnClicked() {
   let randNum = Math.random();
   let input = document.getElementById("search-in");
-  // generate A Random Number
 
   if (randNum < 0.2) {
     document.getElementById("output").innerHTML = "Outlook not so good.";
